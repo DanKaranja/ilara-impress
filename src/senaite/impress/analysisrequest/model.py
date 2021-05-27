@@ -149,7 +149,7 @@ class SuperModel(BaseModel):
         specs = analysis.getResultsRange()
         fs = ''
         if specs.get('min', None) and specs.get('max', None):
-            fs = '%s - %s' % (specs['min'], specs['max'])
+            fs = '%s / %s' % (specs['min'], specs['max'])
         elif specs.get('min', None):
             fs = '> %s' % specs['min']
         elif specs.get('max', None):
